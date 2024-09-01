@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <link rel="icon" href="logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="places.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" width="60px" height="60px">
+        </div>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Places.html">Places</a></li>
+            <li><a href="Ticket Booking.html">Ticket Booking</a></li>
+            <li><a href="https://www.google.com/maps/search/india+tourist+places/@17.1148162,75.1077865,5.25z?authuser=0&entry=ttu" target="_self">Map</a></li>
+           
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </div>  
+       <div class="container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="place1.jpeg" id="imgs">
+            </div>
+        </div>
+    </div>
+    <script>
+        let img = document.querySelector("imgs")
+        images = ["place2.avif","place3.webp","place1.jpeg","place4.jpg","place5.jpg","place6.jpg","place7.jpeg","place8.jpg","place9.webp","place10.jpg","place11.jpeg","place12.jpg","place13.jpg","place14.jpg"];
+
+        var index = 0; 
+        var timer = setInterval(changeImage, 5000);
+        function changeImage(){
+            imgs.src=images[index];
+            index++;
+            if(index == images.length){
+                index = 0;
+            }
+        }
+    </script>
+    <!------------places --------------------->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a place..." onkeyup="searchPlaces()">
+    </div>
+    <div id="places-container">
+        <div class="places-box">
+            <img src="place1.jpeg">
+            <h2 align="center" class="place-title"> Taj Mahal</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://www.tajmahal.gov.in/taj-story.aspx" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        
+        <div class="places-box">
+            <img src="place2.avif">
+            <h2 align="center" class="place-title"> Red Fort</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://www.britannica.com/topic/Red-Fort" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place3.webp">
+            <h2 align="center" class="place-title">Gateway Of India</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Gateway_of_India" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place4.jpg">
+            <h2 align="center" class="place-title"> Jatayu Statue</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://www.onmanorama.com/travel/kerala/2022/09/16/jatayu-earth-centre-sculpture-sights-activities.html" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place5.jpg">
+            <h2 align="center" class="place-title">India Gate</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/India_Gate" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place6.jpg">
+            <h2 align="center" class="place-title">Buddha Park of Ravangla</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://travelsetu.com/guide/buddha-park-tourism/buddha-park-tourism-history" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place7.jpeg">
+            <h2 align="center" class="place-title"> Qutb Minar</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Qutb_Minar" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place8.jpg">
+            <h2 align="center" class="place-title">lotus temple</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Lotus_Temple" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place9.webp">
+            <h2 align="center" class="place-title"> Kandariya Mahadev Temple</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Kandariya_Mahadeva_Temple#:~:text=The%20Kandariya%20Mahadeva%20temple%20was,of%20Jain%20religion%20were%20built." style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place10.jpg">
+            <h2 align="center" class="place-title">Adiyogi Shiva</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Adiyogi_Shiva_bust" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place11.jpeg">
+            <h2 align="center" class="place-title">Hawa Mahal</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place12.jpg">
+            <h2 align="center" class="place-title">Swaminarayan Akshardham</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place13.jpg">
+            <h2 align="center" class="place-title"> Humayun's Tomb</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Humayun%27s_Tomb" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place14.jpg">
+            <h2 align="center" class="place-title">Kerala</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://www.akshartours.com/best-time-to-visit-kerala/" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place15.jpg_cf-webp_w-848_h-551">
+            <h2 align="center" class="place-title">Haridwar</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://www.haridwartravelagents.com/page/history-in-haridwar-pid153" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place16.jpg_cf-webp_w-848_h-551">
+            <h2 align="center" class="place-title"> Varanasi</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://varanasismartcity.gov.in/about/explore-history" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place17.jpg_cf-webp_w-848_h-551">
+            <h2 align="center" class="place-title">Muthura and Vrindavan</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://indianyogi.wixsite.com/nishayogitraveller/mathura-vrindavan-gokul" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place18.jpg_cf-webp_w-848_h-551">
+            <h2 align="center" class="place-title"> Albert Hall Museum</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Albert_Hall_Museum" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place19.webp">
+            <h2 align="center" class="place-title"> Ayodhya Ram Mandir</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://en.wikipedia.org/wiki/Ayodhya" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+        <div class="places-box">
+            <img src="place20.avif">
+            <h2 align="center" class="place-title"> Anantha Padmanabha Swamy Temple</h2>
+            <button style="width:150px; height: 50px;border-radius: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.518);">
+                <a href="https://spst.in/temple-history/" style="text-decoration: none; font-size: 20px; padding: 10px; color: red; font-weight: 900; ">click me</a></button>
+        </div>
+    </div>
+</body>
+<script>
+    function searchPlaces() {
+        var input, filter, placesList, places, title, i, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toLowerCase();
+        placesList = document.getElementById("places-container");
+        places = placesList.getElementsByClassName('places-box');
+
+        for (i = 0; i < places.length; i++) {
+            title = places[i].getElementsByClassName("place-title")[0];
+            txtValue = title.textContent || title.innerText;
+            if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                places[i].style.display = "";
+            } else {
+                places[i].style.display = "none";
+            }
+        }
+    }
+</script>
+</html>
